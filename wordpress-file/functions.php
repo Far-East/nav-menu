@@ -16,3 +16,7 @@
 	function courage_default_menu() {
 		echo '<ul id="mainnav-menu" class="menu">'. wp_list_pages('title_li=&echo=0') .'</ul>';
 	}
+
+
+
+
