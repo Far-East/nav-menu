@@ -4,7 +4,7 @@
 	// Регистрируем меню
 	register_nav_menus( array(
 		'primary'  => __( 'Header menu', 'fe_starter' ),
-		) );
+	) );
 
     // Подключаем js с зависимостью от jqery
 	function my_scripts_method() {
