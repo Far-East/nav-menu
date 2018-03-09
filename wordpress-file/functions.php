@@ -6,9 +6,8 @@
 		'primary'  => __( 'Header menu', 'fe_starter' ),
 	) );
 
-    // Подключаем js с зависимостью от jqery
+        // Подключаем js с зависимостью от jqery
 	function my_scripts_method() {
-
 		wp_enqueue_script( 'navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery') );
 	}
 	add_action( 'wp_enqueue_scripts', 'my_scripts_method' );    
