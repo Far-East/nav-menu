@@ -237,7 +237,7 @@ p {
 	text-decoration: none;
 }
 /* Tablets (landscape) | <960px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
 	/* Mobile Main Navigation */
 	
 	/* Reset */
@@ -383,7 +383,7 @@ p {
 }
 
 /* Big Screens Navi Fix | >720px */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
 	/* ensure #nav is visible on desktop version */
 	#topnav-menu, #mainnav-menu {
 		display: block !important;

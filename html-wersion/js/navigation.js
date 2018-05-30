@@ -17,7 +17,7 @@
 			menuID: "menu",
 			toggleClass: "menu-toggle",
 			toggleText: "",
-			maxWidth: "60em"
+			maxWidth: "991px"
 		};
 		
 		/* Set Variables */
@@ -109,7 +109,7 @@
 			toggleID: "mainnav-toggle",
 			toggleClass: "nav-toggle",
 			toggleText: "Навигация",
-			maxWidth: "60em"
+			maxWidth: "991px"
 		});
 		
 	} );
