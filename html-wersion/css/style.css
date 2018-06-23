@@ -169,6 +169,7 @@ p {
 	list-style-position: outside;
 	position: relative;
 	padding: 0 0.4em;
+	margin: 0;
 }
 #mainnav-menu li{
 	float: left;
