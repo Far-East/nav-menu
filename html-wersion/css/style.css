@@ -173,6 +173,7 @@ p {
 #mainnav-menu li{
 	float: left;
 	position: relative;
+	list-style: none;
 }
 #mainnav-menu a {
 	display: block;
@@ -192,6 +193,7 @@ p {
 	display: none;
 	z-index: 99;
 	background: #252525;
+	padding: 0;
 }
 #mainnav-menu ul li{
 	margin: 0;
