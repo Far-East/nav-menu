@@ -4,6 +4,124 @@
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video, xmp {border: 0;margin: 0;padding: 0;font-size: 100%;}html, body {height: 100%;}article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {display: block;}b, strong {font-weight: bold;}img {color: transparent;font-size: 0;vertical-align: middle;-ms-interpolation-mode: bicubic;}ul, ol {list-style: none;}li {display: list-item;}table {border-collapse: collapse;border-spacing: 0;}th, td, caption {font-weight: normal;vertical-align: top;text-align: left;}q {quotes: none;}q:before, q:after {content: "";content: none;}sub, sup, small {font-size: 75%;}sub, sup {line-height: 0;position: relative;vertical-align: baseline;}sub {bottom: -0.25em;}sup {top: -0.5em;}svg {overflow: hidden;}
 
 
+/*---------------------------------------------------------------------------------------
+# Стили для шаблона, их можно не копировать, установлены для демо страницы
+----------------------------------------------------------------------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Clearing Floats */
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+    *zoom: 1; /* For IE 6/7 only */
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #F5F5F5;
+  text-align: left;
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+
+h2 {
+	font-size: 1.8rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.wrapper {
+	max-width: 1100px;
+	height: auto;
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+	margin: 40px auto;
+}
+
+.main-header {
+	padding: 40px 40px;
+}
+
+.main-header h1 {
+	margin: 0;
+}
+
+.main-content {
+	padding: 30px 40px;	
+}
+
+.main-footer {
+
+}
+
+@media only screen and (max-width: 467px) {
+	h1 {
+		font-size: 1.5rem;
+		line-height: 1;
+		margin-bottom: 0;
+	}
+	.wrapper {
+		margin: 0px auto;
+	}
+	.main-header,
+	.main-content,
+	.main-footer {
+		padding: 30px 20px;
+	}
+}
+
 /*--------------------------------------------------------------
 # Стили для меню. Начинаем отсюда
 --------------------------------------------------------------*/
@@ -51,10 +169,12 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 	list-style-position: outside;
 	position: relative;
 	padding: 0 0.4em;
+	margin: 0;
 }
 #mainnav-menu li{
 	float: left;
 	position: relative;
+	list-style: none;
 }
 #mainnav-menu a {
 	display: block;
@@ -74,6 +194,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 	display: none;
 	z-index: 99;
 	background: #252525;
+	padding: 0;
 }
 #mainnav-menu ul li{
 	margin: 0;
@@ -276,20 +397,23 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 	#mainnav-menu li.menu-item:hover ul a:hover {
 		background: rgba(0, 0, 0, 0.25);
 	}
-	#mainnav-menu ul .menu-item-has-children .submenu-dropdown-toggle:after {
-		font-size: .7em;
-		line-height: 1;
+	#mainnav-menu .menu-item-has-children .submenu-dropdown-toggle:after {
+	    font-size: 1em;
+	    line-height: 1;
 	    font-family: "fontello";
 	    font-style: normal;
 	    font-weight: normal;
 	    text-decoration: inherit;
 	    content: "\f004";
-		color: #fff;
-		position: absolute;
-		right: 1.7em;
-		top: 1.7em;		
+	    color: #fff;
+	    position: absolute;
+	    right: 0.4em;
+	    top: 1.3em;
 	}
 }
+
+
+
 
 
 
